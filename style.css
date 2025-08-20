@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4 url('logo.png') no-repeat center center fixed;
-    background-size: cover;
+    background-size: 40%;
     color: #333;
     position: relative;
 }
@@ -31,10 +31,28 @@ h2, h3 {
 
 /* Cabeçalho */
 header {
-    background: #0056b3;
+    background: #004EA2;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+}
+
+.logo img {
+    height: 200px;
+    width: auto;
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    margin-bottom: 0.25rem;
+}
+
+header p {
+    margin-top: -20px;
+    margin-bottom: 0;
 }
 
 /* Navegação */
@@ -58,6 +76,7 @@ main {
     margin: auto;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 8px;
+    text-align: center;
 }
 
 section {
@@ -65,7 +84,38 @@ section {
     padding: 20px;
     background: transparent;
     border-radius: 8px;
+    text-align: justify;
 }
+
+section h2, h3 {
+    text-align: center;
+}
+
+#geral_produto {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: transparent;
+    border-radius: 8px;
+    display: flex;
+}
+
+.institucional {
+    font-size: 30px;
+}
+
+.container {
+  display: flex; /* Habilita o flexbox no container */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+}
+
+.img_produto img{
+    height: 500px;
+    width: auto;
+    margin-bottom: 0.5rem;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+
 
 /* Grid de Produtos */
 .grid-produtos {
@@ -74,6 +124,28 @@ section {
     gap: 20px;
 }
 
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+img.foto {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.representante {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
 .produto {
     background: #f9f9f9;
     padding: 15px;
@@ -82,20 +154,38 @@ section {
     text-align: center;
 }
 
+
+
 /* Seção de Contato */
-#contato {
+#contatocom {
     text-align: center;
 }
 
-#contato a {
+#contatocom a {
     color: #0056b3;
     text-decoration: none;
     margin: 0 10px;
 }
 
-#contato a:hover {
+#contatocom a:hover {
     text-decoration: underline;
 }
+
+/* Seção de Localização */
+#localizacao {
+    text-align: center;
+}
+
+#localizacao a {
+    color: #0056b3;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#localizacao a:hover {
+    text-decoration: underline;
+}
+
 
 /* Rodapé */
 footer {
@@ -103,6 +193,11 @@ footer {
     padding: 20px;
     background: #333;
     color: #fff;
+}
+
+.gian {
+    font-weight: bold;
+    font-size: 25px;
 }
 
 /* Responsividade */

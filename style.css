@@ -233,6 +233,7 @@ footer {
 
     header {
         padding: 0.5rem;
+        margin-top: 50px;
     }
 
     .logo img {
@@ -253,13 +254,6 @@ footer {
         padding: 0.5rem 0;
     }
 
-    nav a {
-        display: flex;
-        margin: 5px 0;
-        padding: 10px;
-        background: #c2bfbf;
-        border-radius: 5px;
-    }
 
     main {
         padding: 10px;
@@ -286,9 +280,7 @@ footer {
         flex-direction: column;
     }
       .menu {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        flex-wrap: wrap;
     }
 
 }

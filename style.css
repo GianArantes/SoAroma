@@ -286,15 +286,9 @@ footer {
         flex-direction: column;
     }
       .menu {
-    align-items: center;
-  }
-
-  .menu li {
-    width: 100%;
-  }
-
-  .menu li a {
-    padding: 5px;
-  }
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 
 }
